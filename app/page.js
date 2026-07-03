@@ -6,6 +6,5 @@ export default async function HomePage() {
   if (!session?.authenticated) {
     redirect('/login')
   }
-  // Única aba por enquanto; no futuro haverá um índice de ferramentas de suporte.
-  redirect('/speedtest')
+  redirect('/suporte')
 }

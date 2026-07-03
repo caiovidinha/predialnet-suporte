@@ -3,13 +3,14 @@
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-// Navegação do painel de suporte. Só "Speedtest" por enquanto — novas abas
-// entram aqui (ex.: { key: 'chamados', label: 'Chamados', href: '/chamados' }).
+// Navegação do painel de suporte. Novas abas entram aqui
+// (ex.: { key: 'chamados', label: 'Chamados', href: '/chamados' }).
 const NAV = [
+  { key: 'suporte', label: 'Suporte', href: '/suporte' },
   { key: 'speedtest', label: 'Speedtest', href: '/speedtest' },
 ]
 
-export default function AppShell({ active = 'speedtest', children }) {
+export default function AppShell({ active = 'suporte', children }) {
   const router = useRouter()
 
   async function handleLogout() {
