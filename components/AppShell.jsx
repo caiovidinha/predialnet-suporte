@@ -7,6 +7,7 @@ import Link from 'next/link'
 // (ex.: { key: 'chamados', label: 'Chamados', href: '/chamados' }).
 const NAV = [
   { key: 'suporte', label: 'Suporte', href: '/suporte' },
+  { key: 'tickets', label: 'Chamados', href: '/tickets' },
   { key: 'speedtest', label: 'Speedtest', href: '/speedtest' },
 ]
 
